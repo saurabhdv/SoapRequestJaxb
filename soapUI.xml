@@ -1,0 +1,148 @@
+		<FF_WS_evaluateGeneric_V19>
+			<generic>
+			<amount>
+				<accountAmount>111</accountAmount>
+				<normalizedOriginalAmount>111</normalizedOriginalAmount>
+				<oppAccountAmount>111</oppAccountAmount>
+				<originalAmount>111</originalAmount>
+				<payeeAccountAmount>111</payeeAccountAmount>
+				<regionNormalizedOriginalAmount>111</regionNormalizedOriginalAmount>
+			</amount>
+			<baseTransactionA>
+				<channel>WEB</channel>
+				<partyKey>partyKey01</partyKey>
+				<transactionNormalizedDateTime>2017-10-30T06:01:01.000-05:00</transactionNormalizedDateTime>
+				<sessionKey>Session-ACH1</sessionKey>
+			<userId>UserID_1</userId>
+			</baseTransactionA>
+			<baseTransactionB>
+				<accountKey>accKey01</accountKey>
+            </baseTransactionB>
+			<baseTransactionC>
+				<!--  ******************TRX KEY*********************** -->
+				<transactionKey>OD_Commercial_MoneyIn_ACH_01</transactionKey>
+				<transactionType>INTERNATIONAL</transactionType>
+			</baseTransactionC>
+			<monetaryTransactionA>
+				<isOriginated>1</isOriginated>
+			</monetaryTransactionA>
+			<!--
+			******************Money In \ Money Out Indicator ***********************
+			-->
+			<monetaryTransactionB>
+				<fundsDirectionCd>I</fundsDirectionCd>
+				<payeeDataAccountNumber>AN123456</payeeDataAccountNumber>
+				 <payeeAccountKey>PAK123456</payeeAccountKey>
+				  <oppAccountKey>OAK123456</oppAccountKey>
+			</monetaryTransactionB>
+			 <onlineDeviceIdentifiers>
+               
+               <onlineDeviceId>Onlinedevice123</onlineDeviceId>
+              
+            </onlineDeviceIdentifiers>
+			<onlineSession>
+               <headerUserAgent>Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.0.04506.30)</headerUserAgent>
+               <httpHeader>
+               <httpHeaderFields>Accept: text/x-dvi; q=.8; mxb=100000; mxt=5.0, text/x-c 
+Accept-Encoding: x-compress; x-zip
+Accept-Datetime: Thu, 31 May 2007 20:35:00 GMT
+Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0
+Referer: http://www.w3.org/hypertext/DataSources/Overview.html
+Proxy-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==
+Upgrade: HTTP/2.0, SHTTP/1.3, IRC/6.9, RTA/x11
+Accept-Encoding: gzip, deflate
+DNT: 1
+Cookie: __utma=1.17438934.1354708745.1354708745.1354708745.1; __utmz=1.1354708745.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=http%20header%20examples
+Via: 1.0 fred, 1.1 example.com (Apache/1.1)
+X-Forwarded-For: client1, proxy1, proxy2
+x-att-deviceid: MakeModel/Firmware</httpHeaderFields>
+               </httpHeader>
+                                                   <secondFactorAuthInd>1</secondFactorAuthInd>
+               <startDateTime>2008-12-26T09:00:00+02:00</startDateTime>
+               <ipAddress>85.105.115.124</ipAddress>
+               <loginName>loginName</loginName>
+            </onlineSession>
+			<!-- ***************Money Out  fields **************: -->
+			<trxPayeeAccountData>
+				<accountName>PayeeAccntName1</accountName>
+				<accountNumber>1004</accountNumber>
+				<routingNumber>DE89 3704 0044 0532 0130 00</routingNumber>
+				<routingType>IBAN</routingType>
+				 <fiName>CITI</fiName>
+			</trxPayeeAccountData>
+			<!-- ***************Money In fields **************: -->
+			<trxOppositeAccountData>
+				<accountName>PayorAccntName1</accountName>
+				<accountNumber>1005</accountNumber>
+				<routingNumber>ES91 2100 0418 4502 0005 1332</routingNumber>
+				<routingType>IBAN</routingType>
+				<fiName>HSBC</fiName>
+			</trxOppositeAccountData>
+			<trxOppositePartyData>
+           
+               <!--Optional:-->
+               <lastName>Verma</lastName>
+               <!--Optional:-->
+               <name>Saurabh</name>
+               <!--Optional:-->
+               
+            </trxOppositePartyData>
+			<partyReference>
+				<accountOwnershipReference></accountOwnershipReference>
+				<addressData>
+					<POBox>411053</POBox>
+					<addressLine1>Flat no 602</addressLine1>
+					<addressLine2>floor 4</addressLine2>
+					<addressLine3>Pimple-Saudagar</addressLine3>
+					<city>Pimpri-Chinchwad</city>
+					<countryCd>US</countryCd>
+					<state>Maharashtra</state>
+					<zipPostcode>411035</zipPostcode>
+				</addressData>
+					<contactReference></contactReference>
+					<lastName>Agnihotri</lastName>
+					<name>Ameya</name>
+					<!--  QA field that determine segment  -->
+					<partyType>ORGANIZATION</partyType>
+					<referenceUpdateDates></referenceUpdateDates>
+			</partyReference>
+			<trxPayeePartyData>
+				<addressData>
+					<POBox>411039</POBox>
+					<addressLine1>address1</addressLine1>
+					<addressLine2>address2</addressLine2>
+					<addressLine3>address3</addressLine3>
+					<city>Pune</city>
+					<countryCd>IN</countryCd>
+					<state>Maharashtra</state>
+					<zipPostcode>411093</zipPostcode>
+				</addressData>
+				<lastName>abcd payee last name </lastName>
+				<name>Neelam</name>
+			</trxPayeePartyData>
+			<transferTransaction>
+				<isAddEditPayee>0</isAddEditPayee>
+				<isAddEditPayor>0</isAddEditPayor>
+				<isEbill>1</isEbill>
+				<originatorIdentifierForPayee>ABCD</originatorIdentifierForPayee>
+				<originatorIdentifierForPayor>BCDE</originatorIdentifierForPayor>
+				<payeeCreateUpdateDate>2016-10-15T06:01:01.000-05:00</payeeCreateUpdateDate>
+			</transferTransaction>
+			
+			<p2pPayee>
+               <!--Optional:-->
+               <alias>P2PPayee</alias>
+               <!--Optional:-->
+          
+               <!--Optional:-->
+               <aliasType>PAK123456</aliasType>
+            </p2pPayee>
+			<trxMonitoredAccountData>
+				<fiName>Payor FI Name</fiName>
+				<routingNumber>ES91 2100 0418 4502 0005 1332</routingNumber>
+				<routingType>IBAN</routingType>
+				<accountNumber>MAD12345</accountNumber>
+			</trxMonitoredAccountData>
+			</generic>
+		</FF_WS_evaluateGeneric_V19>
